@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "ComboBoxJS";
+}
+
+<h2>ComboBoxJS</h2>
+
+<label>Empleados:</label>
+
+<select id="cboPersonas">
+</select>
+
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Empleados
+    </button>
+    <div id="dropdownCombobox" class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+
+    </div>
+</div>
+
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/bootstrap.bundle.min.js"></script>
+<script src="~/Scripts/combobox.js"></script>
+

@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "ComboBox";
+}
+
+<h2>ComboBox</h2>
+
+<select id="cboMinas">
+    <option value="1">Rubia</option>
+    <option value="2">Morocha</option>
+    <option value="3">Pelirroja</option>
+    <option value="4">Todas</option>
+</select>
+
+<input type="button" id="btnValor" value="Mostrar Valor" />
+<br />
+<label id="lblValor"></label>
+
+
+<script>
+
+    var btnValor = document.getElementById("btnValor");
+
+btnValor.onclick = function () {
+
+    var idMinas = document.getElementById("cboMinas").value;
+
+    document.getElementById("lblValor").innerHTML = idMinas;
+}
+
+
+</script>

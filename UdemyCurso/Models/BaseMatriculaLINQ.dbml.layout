@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 28.25" name="BaseMatriculaLINQ">
+  <DataContextMoniker Name="/BaseMatriculaLINQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="c894acf6-2ba4-4f37-a289-558139a4289c" absoluteBounds="3.75, 12.875, 2, 3.1170068359375005">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Alumno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7988f7de-80a9-49c7-8203-bf7020775ae3" absoluteBounds="3.765, 13.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4050dc01-961f-43cc-889c-d2239be8288d" absoluteBounds="9.5, 16.125, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="93846b9f-40d5-4697-b775-f4ccda6d157e" absoluteBounds="9.515, 16.585, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5be0c052-7ff5-4552-aef2-0dc58331e478" absoluteBounds="0.75, 26.625, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Aula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c3a9cd1-1c19-4d88-9bfa-af4f15a4a512" absoluteBounds="0.765, 27.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7bdfe3a-6b0c-4b1d-9509-1d59ceaa20a7" absoluteBounds="0.75, 10.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Curso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3cfffa4c-1d3d-4dac-adab-f94aa46e091d" absoluteBounds="0.765, 11.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="18cede94-fd78-4ac9-bc5f-99fa493154b3" absoluteBounds="9.25, 6.25, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/DetalleMatricula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="37ac11ab-a174-4883-9a0b-edf92b959ce7" absoluteBounds="9.265, 6.71, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="83b9c21e-38f6-4a30-bc1a-fe916a6947d9" absoluteBounds="0.75, 14.5, 2, 3.6939111328124987">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Docente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e1a922ea-bdad-4ec1-bb97-6812fd7ee4cb" absoluteBounds="0.765, 14.96, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d5cb6103-3c04-4370-bb95-f23683d28ffd" absoluteBounds="3.5, 6.625, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/DocentePeriodo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab442c9d-b355-4dcc-9ffe-fa8fb0417a01" absoluteBounds="3.515, 7.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c120d479-d89d-4649-88f2-289c7984edd4" absoluteBounds="0.75, 2.5, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Grado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="31f6c189-d640-4d71-9b05-4d559542806c" absoluteBounds="0.765, 2.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6f63c849-47a5-4196-914b-8c57b52fe64c" absoluteBounds="6.5, 1.5, 2, 1.5785953776041664">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/GradoSeccion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="39f25b34-257c-4f9f-b269-91153f800cb6" absoluteBounds="6.515, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8291e6e0-ea73-4ae8-bf3b-f0cf9c57c1c1" absoluteBounds="3.5, 9.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/GradoSeccionAula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab99fab6-c661-42e6-9e2d-a049045609b8" absoluteBounds="3.515, 9.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="84de9bc7-70d2-4235-9283-fe9ac73bc0af" absoluteBounds="6.5, 6.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Matricula" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f609d008-957b-4966-b849-10699edd0144" absoluteBounds="6.515, 6.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f2b374bc-24fd-4819-8ad0-d2835de62aa9" absoluteBounds="1.5, 23.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/ModalidadContrato" />
+      <nestedChildShapes>
+        <elementListCompartment Id="58020b68-1b59-4d37-a092-5bb1eb46c6b8" absoluteBounds="1.5150000000000001, 24.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0700462a-bc88-4ce0-8903-1a59114e43de" absoluteBounds="6.75, 14.375, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Pagina" />
+      <nestedChildShapes>
+        <elementListCompartment Id="389aef43-b26e-43a6-84e3-db8aa78ca1fa" absoluteBounds="6.765, 14.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6433583c-7ea1-4a58-a81b-92daded0b0e8" absoluteBounds="0.75, 6.5, 2, 1.7708968098958318">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Periodo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a25a730c-c352-4b4d-badb-cc829620d5f2" absoluteBounds="0.765, 6.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40271aac-9cf7-4b03-a1d1-eb725bcd69c9" absoluteBounds="3.5, 3.5, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/PeriodoGradoCurso" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1878904b-4816-410f-9e64-773f4da4919a" absoluteBounds="3.515, 3.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c857e2e7-123a-48c7-b53f-698e247f493a" absoluteBounds="6.75, 11.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Rol" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ee86442c-03e1-4728-b935-d16362d5aae5" absoluteBounds="6.765, 11.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="196068ae-d387-484a-856a-0a8199b0289b" absoluteBounds="9.5, 11.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/RolPagina" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c653e267-7373-4781-9764-b9485bdb06f3" absoluteBounds="9.515, 12.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9152bdb6-87b9-4c13-ba7a-825752d7d6e7" absoluteBounds="3.75, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Seccion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6fb04bdc-4890-4086-b76d-d47ef76c1a9f" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f34a9d2-2ba2-4ac6-ba61-588932f84612" absoluteBounds="1.5, 19.5, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/Sexo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7448617a-13e5-4ef3-b8b9-f51d109187bd" absoluteBounds="1.5150000000000001, 19.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e1f63195-6fac-41ac-8815-17d0ebe7c536" absoluteBounds="1.5, 21.625, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/BaseMatriculaLINQDataContext/TIPOUSUARIO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="472c52a9-be7e-4970-9f6d-8cfa1ae94ed7" absoluteBounds="1.5150000000000001, 22.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 10.6529279951422); (3.125 : 10.2779279951422); (3.125 : 8.97280110677083); (3.22916666666667 : 8.97280110677083 : JumpStart); (3.48958333333333 : 8.97280110677083 : JumpEnd); (5.57291666666667 : 8.97280110677083 : JumpStart); (5.73958333333333 : 8.97280110677083 : JumpEnd); (8.875 : 8.97280110677083); (9.25 : 8.59780110677083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Curso/Curso_DetalleMatricula" />
+      <nodes>
+        <classShapeMoniker Id="a7bdfe3a-6b0c-4b1d-9509-1d59ceaa20a7" />
+        <classShapeMoniker Id="18cede94-fd78-4ac9-bc5f-99fa493154b3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 14.5630759230769); (3.00357443490112 : 14.3095014881758 : JumpStart); (3.12142556509888 : 14.191650357978 : JumpEnd); (3.3125 : 14.0005759230769); (3.3125 : 7.31814697265625); (3.32291666666667 : 7.31814697265625 : JumpStart); (3.48958333333333 : 7.31814697265625 : JumpEnd); (3.5 : 7.31814697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Docente/Docente_DocentePeriodo" />
+      <nodes>
+        <classShapeMoniker Id="83b9c21e-38f6-4a30-bc1a-fe916a6947d9" />
+        <classShapeMoniker Id="d5cb6103-3c04-4370-bb95-f23683d28ffd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.78929768880208); (5.61979166666667 : 2.78929768880208 : JumpStart); (5.78645833333333 : 2.78929768880208 : JumpEnd); (6.5 : 2.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Grado/Grado_GradoSeccion" />
+      <nodes>
+        <classShapeMoniker Id="c120d479-d89d-4649-88f2-289c7984edd4" />
+        <classShapeMoniker Id="6f63c849-47a5-4196-914b-8c57b52fe64c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 27.3181469726563); (3.625 : 27.3181469726563); (3.625 : 11.4054996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Aula/Aula_GradoSeccionAula" />
+      <nodes>
+        <classShapeMoniker Id="5be0c052-7ff5-4552-aef2-0dc58331e478" />
+        <classShapeMoniker Id="8291e6e0-ea73-4ae8-bf3b-f0cf9c57c1c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 17.124208984375); (2.97916666666667 : 17.124208984375 : JumpStart); (3.14583333333333 : 17.124208984375 : JumpEnd); (3.5937475 : 17.124208984375); (3.5937475 : 11.4054996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Docente/Docente_GradoSeccionAula" />
+      <nodes>
+        <classShapeMoniker Id="83b9c21e-38f6-4a30-bc1a-fe916a6947d9" />
+        <classShapeMoniker Id="8291e6e0-ea73-4ae8-bf3b-f0cf9c57c1c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.5 : 7.32774983723958); (9.25 : 7.32774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Matricula/Matricula_DetalleMatricula" />
+      <nodes>
+        <classShapeMoniker Id="84de9bc7-70d2-4235-9283-fe9ac73bc0af" />
+        <classShapeMoniker Id="18cede94-fd78-4ac9-bc5f-99fa493154b3" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.65625 : 12.875); (5.65625 : 8.23964680989583); (6.5 : 8.23964680989583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Alumno/Alumno_Matricula" />
+      <nodes>
+        <classShapeMoniker Id="c894acf6-2ba4-4f37-a289-558139a4289c" />
+        <classShapeMoniker Id="84de9bc7-70d2-4235-9283-fe9ac73bc0af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.8862939453125); (3.125 : 4.2612939453125); (3.125 : 5.875); (3.32291666666667 : 5.875 : JumpStart); (3.48958333333333 : 5.875 : JumpEnd); (5.61979166666667 : 5.875 : JumpStart); (5.78645833333333 : 5.875 : JumpEnd); (6.125 : 5.875); (6.5 : 6.25)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Grado/Grado_Matricula" />
+      <nodes>
+        <classShapeMoniker Id="c120d479-d89d-4649-88f2-289c7984edd4" />
+        <classShapeMoniker Id="84de9bc7-70d2-4235-9283-fe9ac73bc0af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 24.5392976888021); (1.1249995 : 24.5392976888021); (1.1249995 : 18.1939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/ModalidadContrato/ModalidadContrato_Docente" />
+      <nodes>
+        <classShapeMoniker Id="f2b374bc-24fd-4819-8ad0-d2835de62aa9" />
+        <classShapeMoniker Id="83b9c21e-38f6-4a30-bc1a-fe916a6947d9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.90907348632812); (3.32291666666667 : 6.90907348632812 : JumpStart); (3.48958333333333 : 6.90907348632812 : JumpEnd); (3.5 : 6.90907348632812)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Periodo/Periodo_DocentePeriodo" />
+      <nodes>
+        <classShapeMoniker Id="6433583c-7ea1-4a58-a81b-92daded0b0e8" />
+        <classShapeMoniker Id="d5cb6103-3c04-4370-bb95-f23683d28ffd" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.20959553570713); (3.1875 : 8.64709553570713); (3.1875 : 10.3277498372396); (3.22916666666667 : 10.3277498372396 : JumpStart); (3.39583333333333 : 10.3277498372396 : JumpEnd); (3.5 : 10.3277498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Periodo/Periodo_GradoSeccionAula" />
+      <nodes>
+        <classShapeMoniker Id="6433583c-7ea1-4a58-a81b-92daded0b0e8" />
+        <classShapeMoniker Id="8291e6e0-ea73-4ae8-bf3b-f0cf9c57c1c1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.53125); (3.32291666666667 : 6.53125 : JumpStart); (3.48958333333333 : 6.53125 : JumpEnd); (6.5 : 6.53125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Periodo/Periodo_Matricula" />
+      <nodes>
+        <classShapeMoniker Id="6433583c-7ea1-4a58-a81b-92daded0b0e8" />
+        <classShapeMoniker Id="84de9bc7-70d2-4235-9283-fe9ac73bc0af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.6310705206831); (3.12857443490112 : 10.252496085782 : JumpStart); (3.24642556509888 : 10.1346449555842 : JumpEnd); (3.25357443490112 : 10.127496085782 : JumpStart); (3.37142556509888 : 10.0096449555842 : JumpEnd); (3.40625 : 9.97482052068309); (3.40625 : 4.38544840494792); (3.5 : 4.38544840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Curso/Curso_PeriodoGradoCurso" />
+      <nodes>
+        <classShapeMoniker Id="a7bdfe3a-6b0c-4b1d-9509-1d59ceaa20a7" />
+        <classShapeMoniker Id="40271aac-9cf7-4b03-a1d1-eb725bcd69c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.66189447265625); (3.5 : 3.66189447265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Grado/Grado_PeriodoGradoCurso" />
+      <nodes>
+        <classShapeMoniker Id="c120d479-d89d-4649-88f2-289c7984edd4" />
+        <classShapeMoniker Id="40271aac-9cf7-4b03-a1d1-eb725bcd69c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.5612992741887); (3.1875 : 6.1237992741887); (3.1875 : 4.85942460742187); (3.32291666666667 : 4.85942460742187 : JumpStart); (3.48958333333333 : 4.85942460742187 : JumpEnd); (3.5 : 4.85942460742187)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Periodo/Periodo_PeriodoGradoCurso" />
+      <nodes>
+        <classShapeMoniker Id="6433583c-7ea1-4a58-a81b-92daded0b0e8" />
+        <classShapeMoniker Id="40271aac-9cf7-4b03-a1d1-eb725bcd69c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 13.0785953776042); (9.125 : 13.4535953776042); (9.125 : 17.2027498372396); (9.5 : 17.2027498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Rol/Rol_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="c857e2e7-123a-48c7-b53f-698e247f493a" />
+        <classShapeMoniker Id="4050dc01-961f-43cc-889c-d2239be8288d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 14.4362992741887); (9.06607443490112 : 14.1202248392876 : JumpStart); (9.18392556509888 : 14.0023737090898 : JumpEnd); (9.3125 : 13.8737992741887); (9.3125 : 12.3181469726562); (9.5 : 12.3181469726562)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Pagina/Pagina_RolPagina" />
+      <nodes>
+        <classShapeMoniker Id="0700462a-bc88-4ce0-8903-1a59114e43de" />
+        <classShapeMoniker Id="196068ae-d387-484a-856a-0a8199b0289b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 11.9090734863281); (9.5 : 11.9090734863281)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Rol/Rol_RolPagina" />
+      <nodes>
+        <classShapeMoniker Id="c857e2e7-123a-48c7-b53f-698e247f493a" />
+        <classShapeMoniker Id="196068ae-d387-484a-856a-0a8199b0289b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.75 : 1.81814697265625); (6.5 : 1.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Seccion/Seccion_GradoSeccion" />
+      <nodes>
+        <classShapeMoniker Id="9152bdb6-87b9-4c13-ba7a-825752d7d6e7" />
+        <classShapeMoniker Id="6f63c849-47a5-4196-914b-8c57b52fe64c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.703125 : 2.1362939453125); (5.703125 : 6.390625); (6.5 : 6.390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Seccion/Seccion_Matricula" />
+      <nodes>
+        <classShapeMoniker Id="9152bdb6-87b9-4c13-ba7a-825752d7d6e7" />
+        <classShapeMoniker Id="84de9bc7-70d2-4235-9283-fe9ac73bc0af" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.0625 : 19.5); (3.0625 : 13.65625); (3.22916666666667 : 13.65625 : JumpStart); (3.39583333333333 : 13.65625 : JumpEnd); (3.51041416666667 : 13.65625 : JumpStart); (3.70833333333333 : 13.65625 : JumpEnd); (3.75 : 13.65625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Sexo/Sexo_Alumno" />
+      <nodes>
+        <classShapeMoniker Id="4f34a9d2-2ba2-4ac6-ba61-588932f84612" />
+        <classShapeMoniker Id="c894acf6-2ba4-4f37-a289-558139a4289c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 19.5); (2.125 : 18.1939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/Sexo/Sexo_Docente" />
+      <nodes>
+        <classShapeMoniker Id="4f34a9d2-2ba2-4ac6-ba61-588932f84612" />
+        <classShapeMoniker Id="83b9c21e-38f6-4a30-bc1a-fe916a6947d9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 22.3181469726563); (3.54166666666667 : 22.3181469726563 : JumpStart); (3.70833333333333 : 22.3181469726563 : JumpEnd); (4.75 : 22.3181469726563); (4.75 : 15.9920068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/TIPOUSUARIO/TIPOUSUARIO_Alumno" />
+      <nodes>
+        <classShapeMoniker Id="e1f63195-6fac-41ac-8815-17d0ebe7c536" />
+        <classShapeMoniker Id="c894acf6-2ba4-4f37-a289-558139a4289c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 21.9403209863281); (3.54166666666667 : 21.9403209863281 : JumpStart); (3.70833333333333 : 21.9403209863281 : JumpEnd); (4.66666666666667 : 21.9403209863281 : JumpStart); (4.83333333333333 : 21.9403209863281 : JumpEnd); (10.5 : 21.9403209863281); (10.5 : 18.2804996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/TIPOUSUARIO/TIPOUSUARIO_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="e1f63195-6fac-41ac-8815-17d0ebe7c536" />
+        <classShapeMoniker Id="4050dc01-961f-43cc-889c-d2239be8288d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.5 : 22.3181469726563); (1.20833283333333 : 22.3181469726563 : JumpStart); (1.04166616666667 : 22.3181469726563 : JumpEnd); (0.90624725 : 22.3181469726563); (0.90624725 : 18.1939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/BaseMatriculaLINQDataContext/TIPOUSUARIO/TIPOUSUARIO_Docente" />
+      <nodes>
+        <classShapeMoniker Id="e1f63195-6fac-41ac-8815-17d0ebe7c536" />
+        <classShapeMoniker Id="83b9c21e-38f6-4a30-bc1a-fe916a6947d9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

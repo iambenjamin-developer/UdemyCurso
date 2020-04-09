@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "TablaPeriodo";
+}
+
+<h2>TablaPeriodo</h2>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Agregar
+</button>
+
+<br />
+<br />
+
+<link href="~/Content/datatables.min.css" rel="stylesheet" />
+
+<div id="tablaPeriodoVista"></div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">PERIODO</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table style="width:80%">
+                    <tr>
+                        <td width="40%">ID PERIODO</td>
+                        <td width="60%"><input type="text" id="txtIdPeriodo" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td width="40%">NOMBRE PERIODO</td>
+                        <td width="60%"><input type="text" id="txtNombrePeriodo" /></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/Scripts/CUSTOM/periodo.js"></script>
+<script src="~/Scripts/datatables.min.js"></script>
+
+
+
