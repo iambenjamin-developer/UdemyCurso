@@ -3,7 +3,15 @@
     ViewBag.Title = "TablaPeriodo";
 }
 
+<link href="~/Content/datatables.min.css" rel="stylesheet" />
+
+<link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+<!-- cupertino theme -->
+<link href="~/Content/jquery-ui.theme.min.css" rel="stylesheet" />
+
 <h2>TablaPeriodo</h2>
+
+<input type="text" id="fechaTest" />
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -13,7 +21,7 @@
 <br />
 <br />
 
-<link href="~/Content/datatables.min.css" rel="stylesheet" />
+
 
 <div id="tablaPeriodoVista"></div>
 
@@ -30,7 +38,7 @@
                 </button>
             </div>
             <div class="modal-body">
-                <table style="width:80%">
+                <table style="width:80%;margin:auto">
                     <tr>
                         <td width="40%">ID PERIODO</td>
                         <td width="60%"><input type="text" id="txtIdPeriodo" readonly /></td>
@@ -38,6 +46,14 @@
                     <tr>
                         <td width="40%">NOMBRE PERIODO</td>
                         <td width="60%"><input type="text" id="txtNombrePeriodo" /></td>
+                    </tr>
+                    <tr>
+                        <td width="40%">FECHA INICIO</td>
+                        <td width="60%"><input type="text" id="dtpFechaInicio" /></td>
+                    </tr>
+                    <tr>
+                        <td width="40%">FECHA FIN</td>
+                        <td width="60%"><input type="text" id="dtpFechaFin" /></td>
                     </tr>
                 </table>
 
@@ -50,6 +66,8 @@
     </div>
 </div>
 
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/datepickers.js"></script>
 <script src="~/Scripts/CUSTOM/periodo.js"></script>
 <script src="~/Scripts/datatables.min.js"></script>
 

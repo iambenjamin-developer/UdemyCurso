@@ -1,4 +1,14 @@
-﻿$.get("/Curso/ListarPeriodo/", function (data) {
+﻿$('#fechaTest').datepicker();
+
+
+$('#dtpFechaInicio').datepicker();
+
+$('#dtpFechaFin').datepicker({
+   
+});
+
+
+$.get("/Curso/ListarPeriodo/", function (data) {
 
     //llenar tabla alumnos
     llenarTabla(["ID", "NOMBRE", "FECHA DE INICIO", "FECHA DE FIN", "ACCIONES"], data, "tablaPeriodoVista");
