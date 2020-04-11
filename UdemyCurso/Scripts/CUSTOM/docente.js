@@ -137,23 +137,3 @@ function llenarComboBox(data, idTagString) {
     document.getElementById(idTagString).innerHTML = contenido;
 }
 
-
-var cboTipoModalidad = document.getElementById("cboModalidad");
-
-cboTipoModalidad.onchange = function () {
-
-    var idModalidad = document.getElementById("cboModalidad").value;
-
-    if (idModalidad == -1) {
-        listarDocentes();
-    } else {
-
-        $.get("/Docente/FiltrarDocentesPorModalidad/?idModalidad=" + idModalidad, function (data) {
-
-            //llenar tabla alumnos
-            llenarTabla(["ID", "NOMBRE", "APELLIDO PATERNO", "APELLIDO MATERNO", "EMAIL"], data, "tabla-docente");
-
-        });
-    }
-}
-

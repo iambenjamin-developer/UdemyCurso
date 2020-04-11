@@ -16,12 +16,12 @@
     changeMonth: true,
     changeYear: true,
     dateFormat: 'dd/mm/yy',
-    minDate: '-80Y',
-    maxDate: 0
+    minDate: '-60Y',
+    maxDate: '+1Y',
 };
 $.datepicker.setDefaults($.datepicker.regional['es']);
-$('#fechaTest').datepicker();
-$('#txtFechaNacimiento').datepicker();
+$('#dtpFechaContrato').datepicker();
+
 
 
 function obtenerComboSexo(tag) {
@@ -32,12 +32,22 @@ function obtenerComboSexo(tag) {
 
     });
 }
-function mostrarAlumnos() {
+function obtenerComboModalidadContrato(tag) {
+    $.get("/Docente/ListarModalidadContrato/", function (data) {
 
-    $.get("/Alumno/ListarAlumnos/", function (data) {
+        //llenarComboBox de modalidad contrato
+        llenarComboBox(data, tag);
+
+    });
+}
+
+function mostrarDocentes() {
+
+    $.get("/Docente/ListarDocentes/", function (data) {
 
         //llenar tabla alumnos
-        llenarTabla(["ID", "APELLIDO", "NOMBRE", "FECHA DE NACIMIENTO", "TELEFONO", "ACCIONES"], data, "tabla-alumnos");
+        llenarTabla(["ID", "NOMBRE", "APELLIDO PATERNO", "APELLIDO MATERNO", "DIRECCION", "TELEFONOFIJO",
+            "TELEFONO CELULAR", "EMAIL", "FECHA DE CONTRATO", "ACCIONES"], data, "tabla-docentes");
 
     });
 
@@ -81,9 +91,10 @@ function llenarTabla(arrayCabecera, data, idTagString) {
             contenido += "</td>";
 
         }
+        var idDocente = data[i][arrayColumnas[0]];
         //agregamos los iconos
         contenido += "<td>";
-        contenido += "<button id='btnEditar' class='btn btn-primary' data-toggle='modal' data-target='#exampleModal'><i class='fas fa-edit'></i></button>   ";
+        contenido += "<button id='btnEditar' class='btn btn-primary' onclick='abrirModal(" + idDocente + ")' data-toggle='modal' data-target='#exampleModal'><i class='fas fa-edit'></i></button>   ";
         contenido += "<button id='btnEliminar' class='btn btn-danger' ><i class='fas fa-trash-alt'></i></button>";
         contenido += "</td>";
 
@@ -160,10 +171,58 @@ function llenarComboBox(data, idTagString) {
     document.getElementById(idTagString).innerHTML = contenido;
 }
 
+function abrirModal(idDocente) {
+
+    if (idDocente == -1) {
+
+        document.getElementById("txtIdDocente").value = "";
+        document.getElementById("txtNombre").value = "";
+        document.getElementById("txtApellidoPaterno").value = "";
+        document.getElementById("txtApellidoMaterno").value = "";
+        document.getElementById("txtDireccion").value = "";
+        document.getElementById("txtTelefonoFijo").value = "";
+        document.getElementById("txtTelefonoCelular").value = "";
+        document.getElementById("txtEmail").value = "";
+        document.getElementById("cboSexoPopUp").value = -1;
+        document.getElementById("dtpFechaContrato").value = "";
+        document.getElementById("cboModalidadContratoPopUp").value = -1;
+        document.getElementById("imgFoto").value = data[0].FOTO;
+
+
+    } else {
+
+        $.get("/Docente/EditarDocente/?idDocente=" + idDocente, function (data) {
+
+
+            document.getElementById("txtIdDocente").value = data[0].IIDDOCENTE;
+            document.getElementById("txtNombre").value = data[0].NOMBRE;
+            document.getElementById("txtApellidoPaterno").value = data[0].APPATERNO;
+            document.getElementById("txtApellidoMaterno").value = data[0].APMATERNO;
+            document.getElementById("txtDireccion").value = data[0].DIRECCION;
+            document.getElementById("txtTelefonoFijo").value = data[0].TELEFONOFIJO;
+            document.getElementById("txtTelefonoCelular").value = data[0].TELEFONOCELULAR;
+            document.getElementById("txtEmail").value = data[0].EMAIL;
+            document.getElementById("cboSexoPopUp").value = data[0].IIDSEXO;
+            document.getElementById("dtpFechaContrato").value = data[0].FECHA_CONTRATO;
+            document.getElementById("cboModalidadContratoPopUp").value = data[0].IIDMODALIDADCONTRATO;
+            document.getElementById("imgFoto").value = data[0].FOTO;
+
+
+        });
+    }
+}
+
+
 obtenerComboSexo("cboSexo");
 obtenerComboSexo("cboSexoPopUp");
-mostrarAlumnos();
 
+obtenerComboModalidadContrato("cboModalidadContrato");
+obtenerComboModalidadContrato("cboModalidadContratoPopUp");
+
+mostrarDocentes();
+
+
+/*
 var comboBoxSexo = document.getElementById("cboSexo");
 
 comboBoxSexo.onchange = function () {
@@ -188,3 +247,7 @@ comboBoxSexo.onchange = function () {
 
 
 }
+
+
+
+*/

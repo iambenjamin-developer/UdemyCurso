@@ -1,0 +1,112 @@
+﻿
+@{
+    ViewBag.Title = "TablaDocentes";
+}
+
+<h2>TablaDocentes</h2>
+
+<link href="~/Content/datatables.min.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
+<link href="~/Content/jquery-ui.theme.min.css" rel="stylesheet" />
+
+<div>
+    <label>Sexo:</label>
+    <select id="cboSexo">
+    </select>
+
+    <label>Modalidad Contrato:</label>
+    <select id="cboModalidadContrato">
+    </select>
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onclick="abrirModal(-1)">
+    Agregar
+</button>
+<br />
+<br />
+
+
+@*tabla docentes creada a traves de ajax*@
+<div id="tabla-docentes"></div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">ALUMNOS</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <table style="width:90%;margin:auto">
+                    <tr>
+                        <td>ID</td>
+                        <td><input type="text" id="txtIdDocente" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td>NOMBRE</td>
+                        <td><input type="text" id="txtNombre" /></td>
+                    </tr>
+                    <tr>
+                        <td>APELLIDO PATERNO</td>
+                        <td><input type="text" id="txtApellidoPaterno" /></td>
+                    </tr>
+                    <tr>
+                        <td>APELLIDO MATERNO</td>
+                        <td><input type="text" id="txtApellidoMaterno" /></td>
+                    </tr>
+                    <tr>
+                        <td>DIRECCION</td>
+                        <td><input type="text" id="txtDireccion" /></td>
+                    </tr>
+                    <tr>
+                        <td>TELEFONO FIJO</td>
+                        <td><input type="text" id="txtTelefonoFijo" /></td>
+                    </tr>
+                    <tr>
+                        <td>TELEFONO CELULAR</td>
+                        <td><input type="text" id="txtTelefonoCelular" /></td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL</td>
+                        <td><input type="text" id="txtEmail" /></td>
+                    </tr>
+                    <tr>
+                        <td>SEXO</td>
+                        <td><select id="cboSexoPopUp"></select></td>
+                    </tr>
+                    <tr>
+                        <td>FECHA DE CONTRATO</td>
+                        <td><input type="text" id="dtpFechaContrato" /></td>
+                    </tr>
+                    <tr>
+                        <td>MODALIDAD</td>
+                        <td><select id="cboModalidadContratoPopUp"></select></td>
+                    </tr>
+                    <tr>
+                        <td>FOTO</td>
+                        <td> <img id="imgFoto" width="100" height="100" style="border:1px solid" /></td>
+                    </tr>
+
+                </table>
+
+            </div>
+            <div class="modal-footer">
+                <button id="btnCancelar" type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+                <button id="btnGuardar" type="button" class="btn btn-success">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/Scripts/datatables.min.js"></script>
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/CUSTOM/docenteScript.js"></script>

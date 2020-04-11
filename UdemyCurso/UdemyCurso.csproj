@@ -169,6 +169,7 @@
     <Content Include="Scripts\CUSTOM\combobox.js" />
     <Content Include="Scripts\CUSTOM\curso.js" />
     <Content Include="Scripts\CUSTOM\docente.js" />
+    <Content Include="Scripts\CUSTOM\docenteScript.js" />
     <Content Include="Scripts\CUSTOM\iconos.js" />
     <Content Include="Scripts\CUSTOM\llenarTagsHtml.js" />
     <Content Include="Scripts\CUSTOM\periodo.js" />
@@ -226,6 +227,7 @@
     <Content Include="Views\Test\Iconos.cshtml" />
     <Content Include="Views\Curso\TablaCursoEdicion.cshtml" />
     <Content Include="Views\Alumno\TablaAlumnos.cshtml" />
+    <Content Include="Views\Docente\TablaDocentes.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

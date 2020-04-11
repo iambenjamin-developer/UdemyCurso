@@ -11,11 +11,7 @@ namespace UdemyCurso.Controllers
     {
         BaseMatriculaLINQDataContext db = new BaseMatriculaLINQDataContext();
 
-        // GET: Docente
-        public ActionResult Index()
-        {
-            return View();
-        }
+
 
         public JsonResult ListarDocentes()
         {
@@ -28,9 +24,61 @@ namespace UdemyCurso.Controllers
                              docente.NOMBRE,
                              docente.APPATERNO,
                              docente.APMATERNO,
-                             docente.EMAIL
+                             docente.DIRECCION,
+                             docente.TELEFONOFIJO,
+                             docente.TELEFONOCELULAR,
+                             docente.EMAIL,
+                             //docente.IIDSEXO,
+                             FECHA_CONTRATO = ((DateTime)docente.FECHACONTRATO).ToShortDateString(),
+                             // docente.IIDMODALIDADCONTRATO,
+                             // docente.FOTO
+
 
                          }).ToList();
+
+
+
+            return Json(lista, JsonRequestBehavior.AllowGet);
+
+        }
+
+        public JsonResult EditarDocente(int idDocente)
+        {
+
+            var lista = (from docente in db.Docentes
+                         where docente.IIDDOCENTE.Equals(idDocente)
+                         select new
+                         {
+                             docente.IIDDOCENTE,
+                             docente.NOMBRE,
+                             docente.APPATERNO,
+                             docente.APMATERNO,
+                             docente.DIRECCION,
+                             docente.TELEFONOFIJO,
+                             docente.TELEFONOCELULAR,
+                             docente.EMAIL,
+                             docente.IIDSEXO,
+                             FECHA_CONTRATO = ((DateTime)docente.FECHACONTRATO).ToShortDateString(),
+                             docente.IIDMODALIDADCONTRATO,
+                             docente.FOTO
+
+                         }).ToList();
+
+            return Json(lista, JsonRequestBehavior.AllowGet);
+        }
+
+
+        public ActionResult TablaDocentes()
+        {
+            return View();
+        }
+
+        public JsonResult ListarModalidadContrato()
+        {
+
+            var lista = (db.ModalidadContratos.Where(paramentro => paramentro.BHABILITADO.Equals(1))
+                .Select(columnas => new { ID = columnas.IIDMODALIDADCONTRATO, DESCRIPCION = columnas.NOMBRE })).ToList();
+
 
 
             return Json(lista, JsonRequestBehavior.AllowGet);
@@ -59,16 +107,16 @@ namespace UdemyCurso.Controllers
 
 
 
-        public JsonResult ListarModalidadContrato()
+        // GET: Docente
+        public ActionResult Index()
         {
-
-            var lista = (db.ModalidadContratos.Where(paramentro => paramentro.BHABILITADO.Equals(1))
-                .Select(columnas => new { ID = columnas.IIDMODALIDADCONTRATO, DESCRIPCION = columnas.NOMBRE })).ToList();
-
-
-
-            return Json(lista, JsonRequestBehavior.AllowGet);
-
+            return View();
         }
+
+
+
+
+
+
     }
 }
