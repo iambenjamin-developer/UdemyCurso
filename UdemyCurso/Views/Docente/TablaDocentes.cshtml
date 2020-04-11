@@ -39,7 +39,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">ALUMNOS</h5>
+                <h5 class="modal-title" id="exampleModalLabel">DOCENTES</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -48,47 +48,47 @@
                 <table style="width:90%;margin:auto">
                     <tr>
                         <td>ID</td>
-                        <td><input type="text" id="txtIdDocente" readonly /></td>
+                        <td><input type="text" id="txtIdDocente" readonly class="limpiar" /></td>
                     </tr>
                     <tr>
                         <td>NOMBRE</td>
-                        <td><input type="text" id="txtNombre" /></td>
+                        <td><input type="text" id="txtNombre" class="limpiar"/></td>
                     </tr>
                     <tr>
                         <td>APELLIDO PATERNO</td>
-                        <td><input type="text" id="txtApellidoPaterno" /></td>
+                        <td><input type="text" id="txtApellidoPaterno" class="limpiar" /></td>
                     </tr>
                     <tr>
                         <td>APELLIDO MATERNO</td>
-                        <td><input type="text" id="txtApellidoMaterno" /></td>
+                        <td><input type="text" id="txtApellidoMaterno" class="limpiar" /></td>
                     </tr>
                     <tr>
                         <td>DIRECCION</td>
-                        <td><input type="text" id="txtDireccion" /></td>
+                        <td><input type="text" id="txtDireccion"  class="limpiar"/></td>
                     </tr>
                     <tr>
                         <td>TELEFONO FIJO</td>
-                        <td><input type="text" id="txtTelefonoFijo" /></td>
+                        <td><input type="text" id="txtTelefonoFijo" class="limpiar" /></td>
                     </tr>
                     <tr>
                         <td>TELEFONO CELULAR</td>
-                        <td><input type="text" id="txtTelefonoCelular" /></td>
+                        <td><input type="text" id="txtTelefonoCelular"  class="limpiar"/></td>
                     </tr>
                     <tr>
                         <td>EMAIL</td>
-                        <td><input type="text" id="txtEmail" /></td>
+                        <td><input type="text" id="txtEmail"  class="limpiar"/></td>
                     </tr>
                     <tr>
                         <td>SEXO</td>
-                        <td><select id="cboSexoPopUp"></select></td>
+                        <td><select id="cboSexoPopUp" class="limpiarCbo"></select></td>
                     </tr>
                     <tr>
                         <td>FECHA DE CONTRATO</td>
-                        <td><input type="text" id="dtpFechaContrato" /></td>
+                        <td><input type="text" id="dtpFechaContrato" class="limpiar" /><button><i class="far fa-calendar-alt"></i></button></td>
                     </tr>
                     <tr>
                         <td>MODALIDAD</td>
-                        <td><select id="cboModalidadContratoPopUp"></select></td>
+                        <td><select id="cboModalidadContratoPopUp" class="limpiarCbo" ></select></td>
                     </tr>
                     <tr>
                         <td>FOTO</td>
@@ -110,3 +110,7 @@
 <script src="~/Scripts/datatables.min.js"></script>
 <script src="~/Scripts/jquery-ui.min.js"></script>
 <script src="~/Scripts/CUSTOM/docenteScript.js"></script>
+
+<select>
+    <option value='-1'>--Seleccionar--</option>
+</select>

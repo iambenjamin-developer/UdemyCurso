@@ -175,19 +175,7 @@ function abrirModal(idDocente) {
 
     if (idDocente == -1) {
 
-        document.getElementById("txtIdDocente").value = "";
-        document.getElementById("txtNombre").value = "";
-        document.getElementById("txtApellidoPaterno").value = "";
-        document.getElementById("txtApellidoMaterno").value = "";
-        document.getElementById("txtDireccion").value = "";
-        document.getElementById("txtTelefonoFijo").value = "";
-        document.getElementById("txtTelefonoCelular").value = "";
-        document.getElementById("txtEmail").value = "";
-        document.getElementById("cboSexoPopUp").value = -1;
-        document.getElementById("dtpFechaContrato").value = "";
-        document.getElementById("cboModalidadContratoPopUp").value = -1;
-        document.getElementById("imgFoto").value = data[0].FOTO;
-
+        limpiarDatos();
 
     } else {
 
@@ -212,6 +200,55 @@ function abrirModal(idDocente) {
     }
 }
 
+function limpiarDatos() {
+
+    limpiarTextBoxes();
+    limpiarComboBoxes();
+}
+
+function limpiarTextBoxes() {
+
+    //se limpian todos los textboxes dejando string vacio
+    var controles = document.getElementsByClassName("limpiar");
+
+    for (var i = 0; i < controles.length; i++) {
+
+        controles[i].value = "";
+    }
+
+
+
+
+    /*
+    alert("limpiar textboxes");
+
+    document.getElementById("txtIdDocente").value = "";
+    document.getElementById("txtNombre").value = "";
+    document.getElementById("txtApellidoPaterno").value = "";
+    document.getElementById("txtApellidoMaterno").value = "";
+    document.getElementById("txtDireccion").value = "";
+    document.getElementById("txtTelefonoFijo").value = "";
+    document.getElementById("txtTelefonoCelular").value = "";
+    document.getElementById("txtEmail").value = "";
+    document.getElementById("cboSexoPopUp").value = -1;
+    document.getElementById("dtpFechaContrato").value = "";
+    document.getElementById("cboModalidadContratoPopUp").value = -1;
+    document.getElementById("imgFoto").value = data[0].FOTO;
+    */
+}
+
+function limpiarComboBoxes() {
+
+    //se limpian todos los comboboxes dejando string vacio
+    var controles = document.getElementsByClassName("limpiarCbo");
+
+    for (var i = 0; i < controles.length; i++) {
+
+        controles[i].value = -1;
+    }
+
+}
+
 
 obtenerComboSexo("cboSexo");
 obtenerComboSexo("cboSexoPopUp");
@@ -222,32 +259,3 @@ obtenerComboModalidadContrato("cboModalidadContratoPopUp");
 mostrarDocentes();
 
 
-/*
-var comboBoxSexo = document.getElementById("cboSexo");
-
-comboBoxSexo.onchange = function () {
-
-    var idSexo = document.getElementById("cboSexo").value;
-
-    if (idSexo == -1) {
-
-        mostrarAlumnos();
-
-    } else {
-
-        $.get("/Alumno/ListarAlumnosPorSexo/?idSexo=" + idSexo, function (data) {
-
-            //llenar tabla alumnos
-            llenarTabla(["ID", "APELLIDO", "NOMBRE", "FECHA DE NACIMIENTO", "TELEFONO", "ACCIONES"], data, "tabla-alumnos");
-
-        });
-    }
-
-
-
-
-}
-
-
-
-*/
