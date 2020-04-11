@@ -121,9 +121,12 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AlumnoController.cs" />
     <Compile Include="Controllers\CursoController.cs" />
     <Compile Include="Controllers\DocenteController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PeriodoController.cs" />
+    <Compile Include="Controllers\SeccionController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -159,8 +162,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Images\bootstrap-solid.svg" />
+    <Content Include="Models\ConsultaBaseMatricula.sql" />
     <Content Include="Scripts\all.min.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\CUSTOM\alumnoScript.js" />
     <Content Include="Scripts\CUSTOM\combobox.js" />
     <Content Include="Scripts\CUSTOM\curso.js" />
     <Content Include="Scripts\CUSTOM\docente.js" />
@@ -176,7 +181,6 @@
     <Content Include="Scripts\datepickers.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
     <Content Include="Scripts\jquery-ui.min.js" />
-    <Content Include="Scripts\jquery-ui_es.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -194,6 +198,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Periodo\" />
+    <Folder Include="Views\Seccion\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -219,6 +225,7 @@
     <Content Include="Views\Test\ComboBoxJS.cshtml" />
     <Content Include="Views\Test\Iconos.cshtml" />
     <Content Include="Views\Curso\TablaCursoEdicion.cshtml" />
+    <Content Include="Views\Alumno\TablaAlumnos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

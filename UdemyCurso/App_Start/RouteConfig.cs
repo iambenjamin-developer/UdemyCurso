@@ -16,7 +16,7 @@ namespace UdemyCurso
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Test", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Alumno", action = "TablaAlumnos", id = UrlParameter.Optional }
             );
         }
     }

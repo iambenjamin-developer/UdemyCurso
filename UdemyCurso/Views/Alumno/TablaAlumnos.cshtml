@@ -1,30 +1,32 @@
 ﻿
 @{
-    ViewBag.Title = "TablaPeriodo";
+    ViewBag.Title = "TablaAlumnos";
 }
 
 <link href="~/Content/datatables.min.css" rel="stylesheet" />
-
 <link href="~/Content/jquery-ui.min.css" rel="stylesheet" />
-<!-- cupertino theme -->
 <link href="~/Content/jquery-ui.theme.min.css" rel="stylesheet" />
 
-<h2>TablaPeriodo</h2>
+<br />
+<div>
+    <select id="cboSexo">
+    </select>
 
-<input type="text" id="fechaTest" />
+    <label>FechaPrueba</label>
+    <input type="text" id="fechaTest" value="" />
+</div>
+<br />
 
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
     Agregar
 </button>
-
 <br />
 <br />
 
 
-
-<div id="tablaPeriodoVista"></div>
-
+@*tabla alumnos creada a traves de ajax*@
+<div id="tabla-alumnos"></div>
 
 
 <!-- Modal -->
@@ -32,28 +34,32 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">PERIODO</h5>
+                <h5 class="modal-title" id="exampleModalLabel">ALUMNOS</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <table style="width:80%;margin:auto">
+                <table style="width:90%;margin:auto">
                     <tr>
-                        <td width="40%">ID PERIODO</td>
-                        <td width="60%"><input type="text" id="txtIdPeriodo" readonly /></td>
+                        <td>ID</td>
+                        <td><input type="text" id="txtIdAlumno" readonly /></td>
                     </tr>
                     <tr>
-                        <td width="40%">NOMBRE PERIODO</td>
-                        <td width="60%"><input type="text" id="txtNombrePeriodo" /></td>
+                        <td>APELLIDO</td>
+                        <td><input type="text" id="txtApellido" /></td>
                     </tr>
                     <tr>
-                        <td width="40%">FECHA INICIO</td>
-                        <td width="60%"><input type="text" id="dtpFechaInicio" /></td>
+                        <td>NOMBRE</td>
+                        <td><input type="text" id="txtNombre"  /></td>
                     </tr>
                     <tr>
-                        <td width="40%">FECHA FIN</td>
-                        <td width="60%"><input type="text" id="dtpFechaFin" /></td>
+                        <td>FECHA DE NACIMIENTO</td>
+                        <td><input type="text" id="txtFechaNacimiento"  /></td>
+                    </tr>
+                    <tr>
+                        <td>TELEFONO</td>
+                        <td><input type="text" id="txtTelefono"  /></td>
                     </tr>
                 </table>
 
@@ -66,10 +72,7 @@
     </div>
 </div>
 
-<script src="~/Scripts/jquery-ui.min.js"></script>
-<script src="~/Scripts/datepickers.js"></script>
-<script src="~/Scripts/CUSTOM/periodo.js"></script>
+
 <script src="~/Scripts/datatables.min.js"></script>
-
-
-
+<script src="~/Scripts/jquery-ui.min.js"></script>
+<script src="~/Scripts/CUSTOM/alumnoScript.js"></script>
