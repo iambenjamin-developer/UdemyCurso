@@ -142,6 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\cssPropio.css" />
     <Content Include="Content\datatables.min.css" />
     <Content Include="Content\images\ui-bg_diagonals-thick_90_eeeeee_40x40.png" />
     <Content Include="Content\images\ui-bg_glass_100_e4f1fb_1x400.png" />

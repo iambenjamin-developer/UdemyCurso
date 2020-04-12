@@ -249,6 +249,23 @@ function limpiarComboBoxes() {
 
 }
 
+function datosObligatorios() {
+   
+    var contenido = "&nbsp;<i class='far fa-times-circle' style='color:red;''></i>";
+    var controles = document.getElementsByClassName("incompleto");
+
+    for (var i = 0; i < controles.length; i++) {
+
+        controles[i].innerHTML = contenido;
+    }
+
+}
+
+
+function agregar() {
+
+    datosObligatorios();
+}
 
 obtenerComboSexo("cboSexo");
 obtenerComboSexo("cboSexoPopUp");

@@ -47,60 +47,61 @@
             <div class="modal-body">
                 <table style="width:90%;margin:auto">
                     <tr>
-                        <td>ID</td>
+                        <td id="lblId">ID</td>
                         <td><input type="text" id="txtIdDocente" readonly class="limpiar" /></td>
                     </tr>
                     <tr>
-                        <td>NOMBRE</td>
-                        <td><input type="text" id="txtNombre" class="limpiar"/></td>
+                        <td  id="lblNombre">NOMBRE</td>
+                        <td><input type="text" id="txtNombre" class="limpiar obligatorio" /><label class="incompleto"></label></td>
                     </tr>
                     <tr>
-                        <td>APELLIDO PATERNO</td>
-                        <td><input type="text" id="txtApellidoPaterno" class="limpiar" /></td>
+                        <td id="lblApellidoPaterno">APELLIDO PATERNO</td>
+                        <td><input type="text" id="txtApellidoPaterno" class="limpiar obligatorio" /></td>
                     </tr>
                     <tr>
-                        <td>APELLIDO MATERNO</td>
-                        <td><input type="text" id="txtApellidoMaterno" class="limpiar" /></td>
+                        <td id="lblApellidoMaterno">APELLIDO MATERNO</td>
+                        <td><input type="text" id="txtApellidoMaterno" class="limpiar obligatorio" /><label class="incompleto"></label></td>
                     </tr>
                     <tr>
-                        <td>DIRECCION</td>
-                        <td><input type="text" id="txtDireccion"  class="limpiar"/></td>
+                        <td id="lblDireccion">DIRECCION</td>
+                        <td><input type="text" id="txtDireccion" class="limpiar obligatorio" /><label class="incompleto"></label></td>
                     </tr>
                     <tr>
-                        <td>TELEFONO FIJO</td>
+                        <td id="lblTelefonoFijo">TELEFONO FIJO</td>
                         <td><input type="text" id="txtTelefonoFijo" class="limpiar" /></td>
                     </tr>
                     <tr>
-                        <td>TELEFONO CELULAR</td>
-                        <td><input type="text" id="txtTelefonoCelular"  class="limpiar"/></td>
+                        <td id="lblTelefonoCelular">TELEFONO CELULAR</td>
+                        <td><input type="text" id="txtTelefonoCelular" class="limpiar obligatorio" /></td>
                     </tr>
                     <tr>
-                        <td>EMAIL</td>
-                        <td><input type="text" id="txtEmail"  class="limpiar"/></td>
+                        <td id="lblTEmail">EMAIL</td>
+                        <td><input type="text" id="txtEmail" class="limpiar" /></td>
                     </tr>
                     <tr>
-                        <td>SEXO</td>
-                        <td><select id="cboSexoPopUp" class="limpiarCbo"></select></td>
+                        <td id="lblSexo">SEXO</td>
+                        <td><select id="cboSexoPopUp" class="limpiarCbo obligatorio"></select></td>
                     </tr>
                     <tr>
-                        <td>FECHA DE CONTRATO</td>
-                        <td><input type="text" id="dtpFechaContrato" class="limpiar" /><button><i class="far fa-calendar-alt"></i></button></td>
+                        <td id="lblFechaContrato">FECHA DE CONTRATO</td>
+                        <td><input type="text" id="dtpFechaContrato" class="limpiar obligatorio" /><button><i class="far fa-calendar-alt"></i></button></td>
                     </tr>
                     <tr>
-                        <td>MODALIDAD</td>
-                        <td><select id="cboModalidadContratoPopUp" class="limpiarCbo" ></select></td>
+                        <td id="lblModalidad">MODALIDAD</td>
+                        <td><select id="cboModalidadContratoPopUp" class="limpiarCbo obligatorio"></select></td>
                     </tr>
                     <tr>
-                        <td>FOTO</td>
+                        <td id="lblFoto">FOTO</td>
                         <td> <img id="imgFoto" width="100" height="100" style="border:1px solid" /></td>
                     </tr>
 
                 </table>
 
+
             </div>
             <div class="modal-footer">
                 <button id="btnCancelar" type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                <button id="btnGuardar" type="button" class="btn btn-success">Guardar</button>
+                <button id="btnAceptar" onclick="agregar()" type="button" class="btn btn-success">Aceptar</button>
             </div>
         </div>
     </div>
