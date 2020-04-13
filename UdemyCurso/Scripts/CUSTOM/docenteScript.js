@@ -250,15 +250,24 @@ function limpiarComboBoxes() {
 }
 
 function datosObligatorios() {
-   
-    var contenido = "&nbsp;<i class='far fa-times-circle' style='color:red;''></i>";
-    var controles = document.getElementsByClassName("incompleto");
 
-    for (var i = 0; i < controles.length; i++) {
+    var elementos = document.getElementsByClassName("obligatorio");
 
-        controles[i].innerHTML = contenido;
+    var idLabel = "string";
+
+    for (var i = 0; i < elementos.length; i++) {
+        //creamos nombre de label
+        idLabel = "lbl" + elementos[i].id;
+
+        if (elementos[i].value != "") {
+
+            document.getElementById(idLabel).innerHTML = "&nbsp;<i class='fas fa-check' style='color:green;'></i>";
+        } else {
+
+            document.getElementById(idLabel).innerHTML = "&nbsp;<i class='far fa-times-circle' style='color:red;'></i>";
+        }
+
     }
-
 }
 
 

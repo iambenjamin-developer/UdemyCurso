@@ -168,6 +168,7 @@
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\CUSTOM\alumnoScript.js" />
     <Content Include="Scripts\CUSTOM\combobox.js" />
+    <Content Include="Scripts\CUSTOM\coronavirus.js" />
     <Content Include="Scripts\CUSTOM\curso.js" />
     <Content Include="Scripts\CUSTOM\docente.js" />
     <Content Include="Scripts\CUSTOM\docenteScript.js" />
@@ -229,6 +230,7 @@
     <Content Include="Views\Curso\TablaCursoEdicion.cshtml" />
     <Content Include="Views\Alumno\TablaAlumnos.cshtml" />
     <Content Include="Views\Docente\TablaDocentes.cshtml" />
+    <Content Include="Views\Test\Tabla.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
