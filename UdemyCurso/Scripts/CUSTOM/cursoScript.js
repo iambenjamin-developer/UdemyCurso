@@ -214,27 +214,32 @@ function agregar() {
 
 
 
-        $.ajax({
-            type: "POST",
-            url: "/Curso/GuardarDatos/",
-            data: frm,
-            contentType: false,
-            processData: false,
-            success: function (data) {
-                if (data != 0) {
 
-                    mostrarTabla();
+        if (confirm("¿Desea Confirmar Guardar?") == 1) {
 
-                   // alert("Exitoso");
+            $.ajax({
+                type: "POST",
+                url: "/Curso/GuardarDatos/",
+                data: frm,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    if (data != 0) {
 
-                    document.getElementById("btnCancelar").click();
-                } else {
-                    alert("Error");
+                        mostrarTabla();
+
+                        // alert("Exitoso");
+
+                        document.getElementById("btnCancelar").click();
+                    } else {
+                        alert("Error");
+                    }
+
                 }
 
-            }
+            })
 
-        })
+        } //fin confirmacion
     }
     else {
 

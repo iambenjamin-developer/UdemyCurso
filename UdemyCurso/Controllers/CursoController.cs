@@ -67,14 +67,22 @@ namespace UdemyCurso.Controllers
 
 
                 }//si el ID es distinto de cero editar entidad
-                else {
+                else
+                {
 
-                    nroRegistrosAfectados = 0;
+                    Models.Curso updateCurso = baseMatricula.Cursos.Where(parametro => parametro.IIDCURSO.Equals(objCurso.IIDCURSO)).First();
+
+                    updateCurso.NOMBRE = objCurso.NOMBRE;
+                    updateCurso.DESCRIPCION = objCurso.DESCRIPCION;
+                    updateCurso.BHABILITADO = objCurso.BHABILITADO;
+
+                    baseMatricula.SubmitChanges();
+                    nroRegistrosAfectados = 1;
                 }
             }
             catch (Exception ex)
             {
-
+                nroRegistrosAfectados = 0;
                 throw;
             }
 
