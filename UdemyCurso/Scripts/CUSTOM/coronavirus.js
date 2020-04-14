@@ -14,15 +14,19 @@ btnValidar.onclick = function () {
 }
 
 function validar() {
+     //elementos[i].parentNode.classList.add("nombreClase");
+    //elementos[i].parentNode.classList.remove("nombreClase");
 
     var elementos = document.getElementsByClassName("obligatorio");
 
     var idLabel = "string";
 
     for (var i = 0; i < elementos.length; i++) {
+
         //creamos nombre de label
         idLabel = "lbl" + elementos[i].id;
 
+       
         if (elementos[i].value != "") {
 
             document.getElementById(idLabel).innerHTML = "&nbsp;<i class='fas fa-check' style='color:green;'></i>";

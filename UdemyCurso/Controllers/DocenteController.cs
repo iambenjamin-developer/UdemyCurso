@@ -105,6 +105,46 @@ namespace UdemyCurso.Controllers
         }
 
 
+        public int GuardarDatos(Docente objDocente)
+        {
+            int nroRegistros = 0;
+
+
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+
+
+            return nroRegistros;
+        }
+
+        public int GuardarSexo(Sexo objSexo)
+        {
+            int nroRegistros = 0;
+
+
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
+                throw;
+            }
+
+
+
+            return nroRegistros;
+        }
+
 
 
         // GET: Docente

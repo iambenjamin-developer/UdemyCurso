@@ -170,6 +170,7 @@
     <Content Include="Scripts\CUSTOM\combobox.js" />
     <Content Include="Scripts\CUSTOM\coronavirus.js" />
     <Content Include="Scripts\CUSTOM\curso.js" />
+    <Content Include="Scripts\CUSTOM\cursoScript.js" />
     <Content Include="Scripts\CUSTOM\docente.js" />
     <Content Include="Scripts\CUSTOM\docenteScript.js" />
     <Content Include="Scripts\CUSTOM\iconos.js" />
@@ -214,6 +215,7 @@
       <LastGenOutput>BaseMatriculaLINQ.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Content\bootstrap.min.css.map" />
     <None Include="Models\BaseMatriculaLINQ.dbml.layout">
       <DependentUpon>BaseMatriculaLINQ.dbml</DependentUpon>
     </None>
@@ -222,15 +224,14 @@
     <Content Include="Views\Test\LayoutViejo.cshtml" />
     <Content Include="Views\Test\Jquery.cshtml" />
     <Content Include="Views\Docente\Index.cshtml" />
-    <Content Include="Views\Curso\TablaCurso.cshtml" />
     <Content Include="Views\Curso\TablaPeriodo.cshtml" />
     <Content Include="Views\Test\ComboBox.cshtml" />
     <Content Include="Views\Test\ComboBoxJS.cshtml" />
     <Content Include="Views\Test\Iconos.cshtml" />
-    <Content Include="Views\Curso\TablaCursoEdicion.cshtml" />
     <Content Include="Views\Alumno\TablaAlumnos.cshtml" />
     <Content Include="Views\Docente\TablaDocentes.cshtml" />
     <Content Include="Views\Test\Tabla.cshtml" />
+    <Content Include="Views\Curso\TablaCursos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />

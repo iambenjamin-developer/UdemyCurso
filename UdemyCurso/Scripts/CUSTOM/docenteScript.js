@@ -251,6 +251,9 @@ function limpiarComboBoxes() {
 
 function datosObligatorios() {
 
+    var bandera = true;
+    var contadorBandera = 0;
+
     var elementos = document.getElementsByClassName("obligatorio");
 
     var idLabel = "string";
@@ -265,15 +268,89 @@ function datosObligatorios() {
         } else {
 
             document.getElementById(idLabel).innerHTML = "&nbsp;<i class='far fa-times-circle' style='color:red;'></i>";
+
+            //contar las veces que dio falso
+            contadorBandera = contadorBandera + 1;
         }
 
     }
+
+
+    //chequear si da verdadero o falso
+    if (contadorBandera > 0) {
+        bandera = false;
+    }
+
+    return bandera;
 }
 
 
 function agregar() {
 
-    datosObligatorios();
+    if (datosObligatorios() == true) {
+
+
+        var frm = new FormData();
+
+        var idDocente = document.getElementById("txtIdDocente").value;
+        var nombre = document.getElementById("txtNombre").value;
+        var apellidoPaterno = document.getElementById("txtApellidoPaterno").value;
+        var apellidoMaterno = document.getElementById("txtApellidoMaterno").value;
+        var direccion = document.getElementById("txtDireccion").value;
+        var telefonoFijo = document.getElementById("txtTelefonoFijo").value;
+        var telefonoCelular = document.getElementById("txtTelefonoCelular").value;
+        var email = document.getElementById("txtEmail").value;
+        var idSexo = document.getElementById("cboSexoPopUp").value;
+        var fechaContrato = document.getElementById("dtpFechaContrato").value;
+        var idModalidad = document.getElementById("cboModalidadContratoPopUp").value;
+        var imgFoto = document.getElementById("imgFoto").value;
+
+
+      
+       
+        frm.append("IIDDOCENTE", 0);
+        frm.append("NOMBRE", nombre);
+        frm.append("APPATERNO", apellidoPaterno);
+        frm.append("APMATERNO", apellidoMaterno);
+        frm.append("DIRECCION", direccion);
+        frm.append("TELEFONOFIJO", telefonoFijo);
+        frm.append("TELEFONOCELULAR", telefonoCelular);
+        frm.append("EMAIL", email);
+        frm.append("IIDSEXO", idSexo);
+        frm.append("FECHACONTRATO", fechaContrato);
+        frm.append("IIDMODALIDADCONTRATO", idModalidad);
+        frm.append("FOTO", 0);
+        frm.append("BHABILITADO", 1);
+
+        console.log(idDocente);
+        console.log(nombre);
+        console.log(apellidoPaterno);
+        console.log(apellidoMaterno);
+        console.log(direccion);
+        console.log(telefonoFijo);
+        console.log(telefonoCelular);
+        console.log(email);
+        console.log(idSexo);
+        console.log(fechaContrato);
+        console.log(idModalidad);
+        console.log(imgFoto);
+
+        console.log(frm);
+
+
+        $.ajax({
+            type: "POST",
+            url: "/Docente/GuardarSexo/",
+            data: frm,
+            contentType: false,
+            processData: false,
+            success: function (data) { }
+
+        })
+    }
+    else {
+
+    }
 }
 
 obtenerComboSexo("cboSexo");
