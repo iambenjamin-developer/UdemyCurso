@@ -52,7 +52,7 @@ function llenarTabla(arrayCabecera, data, idTagString) {
         //agregamos los iconos
         contenido += "<td>";
         contenido += "<button id='btnEditar' class='btn btn-primary' onclick='abrirModal(" + idEntidad + ")' data-toggle='modal' data-target='#exampleModal'><i class='fas fa-edit'></i></button>   ";
-        contenido += "<button id='btnEliminar' class='btn btn-danger' ><i class='fas fa-trash-alt'></i></button>";
+        contenido += "<button id='btnEliminar' class='btn btn-danger' onclick='eliminar(" + idEntidad + ")' ><i class='fas fa-trash-alt'></i></button>";
         contenido += "</td>";
 
         contenido += "</tr>";
@@ -208,9 +208,9 @@ function agregar() {
         frm.append("DESCRIPCION", descripcion);
         frm.append("BHABILITADO", 1);
 
-        console.log(idCurso);
-        console.log(nombre);
-        console.log(descripcion);
+        //console.log(idCurso);
+        //console.log(nombre);
+        //console.log(descripcion);
 
 
 
@@ -247,6 +247,39 @@ function agregar() {
 }
 
 
+function eliminar(id) {
 
+
+    var frm = new FormData();
+
+    frm.append("IIDCURSO", id);
+ 
+
+    if (confirm("¿Seguro que quiere eliminar el registro??") == 1) {
+
+        $.ajax({
+            type: "POST",
+            url: "/Curso/Eliminar/",
+            data: frm,
+            contentType: false,
+            processData: false,
+            success: function (data) {
+                if (data != 0) {
+
+                    mostrarTabla();
+
+                    // alert("Exitoso");
+
+                    document.getElementById("btnCancelar").click();
+                } else {
+                    alert("Error");
+                }
+
+            }
+
+        })
+
+    } //fin confirmacion
+}
 
 

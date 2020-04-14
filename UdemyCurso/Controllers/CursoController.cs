@@ -49,7 +49,7 @@ namespace UdemyCurso.Controllers
 
         public int GuardarDatos(Models.Curso objCurso)
         {
-            Models.BaseMatriculaLINQDataContext baseMatricula = new Models.BaseMatriculaLINQDataContext();
+            //  Models.BaseMatriculaLINQDataContext baseMatricula = new Models.BaseMatriculaLINQDataContext();
 
             int nroRegistrosAfectados = 0;
 
@@ -60,8 +60,8 @@ namespace UdemyCurso.Controllers
                 if (objCurso.IIDCURSO == 0)
                 {
 
-                    baseMatricula.Cursos.InsertOnSubmit(objCurso);
-                    baseMatricula.SubmitChanges();
+                    db.Cursos.InsertOnSubmit(objCurso);
+                    db.SubmitChanges();
 
                     nroRegistrosAfectados = 1;
 
@@ -70,13 +70,13 @@ namespace UdemyCurso.Controllers
                 else
                 {
 
-                    Models.Curso updateCurso = baseMatricula.Cursos.Where(parametro => parametro.IIDCURSO.Equals(objCurso.IIDCURSO)).First();
+                    Models.Curso updateCurso = db.Cursos.Where(parametro => parametro.IIDCURSO.Equals(objCurso.IIDCURSO)).First();
 
                     updateCurso.NOMBRE = objCurso.NOMBRE;
                     updateCurso.DESCRIPCION = objCurso.DESCRIPCION;
                     updateCurso.BHABILITADO = objCurso.BHABILITADO;
 
-                    baseMatricula.SubmitChanges();
+                    db.SubmitChanges();
                     nroRegistrosAfectados = 1;
                 }
             }
@@ -92,6 +92,31 @@ namespace UdemyCurso.Controllers
         }
 
 
+        public int Eliminar(Models.Curso objCurso)
+        {
+
+            int nroRegistrosAfectados = 0;
+
+            try
+            {
+
+                Models.Curso updateCurso = db.Cursos.Where(parametro => parametro.IIDCURSO.Equals(objCurso.IIDCURSO)).First();
+
+                updateCurso.BHABILITADO = 0;
+
+                db.SubmitChanges();
+
+                nroRegistrosAfectados = 1;
+            }
+            catch (Exception ex)
+            {
+
+                nroRegistrosAfectados = 0;
+            }
+
+
+            return nroRegistrosAfectados;
+        }
 
         // GET: Curso
         public ActionResult Index()
